@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsKotlin">
         <activity
+            android:name=".SwipableViews"
+            android:exported="false" />
+        <activity
             android:name=".BottomNavActivity"
             android:exported="false" />
         <activity
