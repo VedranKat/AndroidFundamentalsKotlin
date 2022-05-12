@@ -24,24 +24,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var todoList = mutableListOf(
-            Todo("Follow AndroidDevs", false),
-            Todo("Learn about RecyclerView", true),
-            Todo("Tutorial is deprecated", true),
-            Todo("Finish AI project", true),
-            Todo("Study for test in 2 days", true)
-        )
-
-        val adapter = TodoAdapter(todoList)
-        binding.rvTodo.adapter = adapter
-        binding.rvTodo.layoutManager = LinearLayoutManager(this)
-
-        binding.btnTodo.setOnClickListener(){
-            val title = binding.etTodo.text.toString()
-            val todo = Todo(title, false)
-            todoList.add(todo)
-            // adapter.notifyDataSetChanged() - works too but updates the whole Rview instead of a single item
-            adapter.notifyItemInserted(todoList.size - 1)
+        binding.btnMove.setOnClickListener(){
+            Intent(this, BottomNavActivity::class.java).also {
+                startActivity(it)
+            }
         }
 
     }
