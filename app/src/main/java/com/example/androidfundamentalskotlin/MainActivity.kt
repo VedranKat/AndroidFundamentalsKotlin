@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnMove.setOnClickListener(){
-            Intent(this, SwipableViews::class.java).also {
+            Intent(this, SharedPref::class.java).also {
                 startActivity(it)
             }
         }

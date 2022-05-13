@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsKotlin">
         <activity
+            android:name=".SharedPref"
+            android:exported="false" />
+        <activity
+            android:name=".NavDrawerActivity"
+            android:exported="false" />
+        <activity
             android:name=".SwipableViews"
             android:exported="false" />
         <activity
