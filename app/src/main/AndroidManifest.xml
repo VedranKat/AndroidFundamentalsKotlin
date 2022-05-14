@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsKotlin">
         <activity
+            android:name=".ServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SharedPref"
             android:exported="false" />
         <activity
@@ -33,6 +39,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".MyService"/>
     </application>
 
 </manifest>
