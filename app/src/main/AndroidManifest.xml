@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsKotlin">
         <activity
-            android:name=".ServicesActivity"
+            android:name=".DragAndDropActivity"
             android:exported="false" />
         <activity
             android:name=".NotificationsActivity"
@@ -39,7 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".MyService"/>
     </application>
 
 </manifest>
