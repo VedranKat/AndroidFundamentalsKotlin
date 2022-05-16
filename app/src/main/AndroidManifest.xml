@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsKotlin">
         <activity
+            android:name=".BroadcastReceiverActivity"
+            android:exported="false" />
+        <activity
             android:name=".DragAndDropActivity"
             android:exported="false" />
         <activity

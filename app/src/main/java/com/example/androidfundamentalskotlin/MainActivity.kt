@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnMove.setOnClickListener(){
-            Intent(this, DragAndDropActivity::class.java).also {
+            Intent(this, BroadcastReceiverActivity::class.java).also {
                 startActivity(it)
             }
         }
